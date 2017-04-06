@@ -14,7 +14,7 @@
       "description": "Gestionnaire de paramètres pour Cozy v3"
     }
   },
-  "version": "3.0.3",
+  "version": "3.0.4",
   "licence": "AGPL-3.0",
   "permissions": {
     "settings": {
@@ -26,6 +26,15 @@
       "description": "Required to manage devices connected to your Cozy",
       "type": "io.cozy.oauth.clients",
       "verbs": ["GET", "DELETE"]
+    },
+    "konnectors": {
+      "type": "io.cozy.konnectors",
+      "description": "Required by the cozy-bar to display the icons of the apps",
+      "verbs": [
+        "GET",
+        "POST",
+        "PUT"
+      ]
     },
     "apps": {
       "description": "Required by the cozy-bar to display the icons of the apps",
